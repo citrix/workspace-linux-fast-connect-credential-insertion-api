@@ -3,7 +3,7 @@
 To use the Fast Connect API you must first configure your site appropriately:
 	
 1. In StoreFront, enable the HTTP Basic authentication method as follows: ![Manage authentication methods](manage-auth-methods.png)
-2. If Citrix Receiver for Linux is running, close it.
+2. If Citrix Workspace app for Linux is running, close it.
 3.	If the Authentication Manager (AM) daemon is running, terminate it.
 4. Add the following key to the AM configuration file ($ICAROOT/config/AuthManConfig.xml) to allow HTTP Basic authentication, which is needed for SSO:
 
@@ -16,9 +16,9 @@ To use the Fast Connect API you must first configure your site appropriately:
 ```
 If the protocol key is already present and configured with other protocols, add the HTTPBasic sub-key to the Protocols node.
 
-**Note**: AM’s configuration file included with Citrix Receiver for Linux 13.10 contains an example of how to enable HTTPBasic support.
+**Note**: AM’s configuration file included with Citrix Workspace app for Linux 13.10 contains an example of how to enable HTTPBasic support.
 
-&#53;. Start Citrix Receiver for Linux.
+&#53;. Start Citrix Workspace app for Linux.
 
 &#54;. You can now inject a user name and password into the SSO functionality by interacting with the Fast Connect API, using the `LogonSsoUser()` function described later in this document.
 
